@@ -11,8 +11,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Separator } from "@/components/ui/separator";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
 import {
   ArrowRight,
@@ -198,9 +196,7 @@ const Index = () => {
   }, [heroSlides.length]);
 
   return (
-    <div className="min-h-screen bg-tobacco-50">
-      <Header />
-
+    <div className="bg-tobacco-50">
       {/* Hero Section */}
       <section className="relative h-[70vh] overflow-hidden">
         {heroSlides.map((slide, index) => (
@@ -535,8 +531,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 };
